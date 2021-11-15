@@ -44,6 +44,18 @@
           }
         },
         {
+          "type": "executiontime",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#8800dd",
+          "properties": {
+            "threshold": 500,
+            "style": "austin",
+            "prefix": " <#fefefe>\ufbab</> "
+          }
+        },
+        {
           "type": "exit",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
