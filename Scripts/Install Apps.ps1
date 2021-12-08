@@ -2,7 +2,6 @@
 Write-Output "First we are going to install Chocolatey, this will allow us to install the other applications in this script"
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-# comms and browsers are lightweight and important
 $communication = ("slack", "zoom", "whatsapp")
 $browsers = ("microsoft-edge", "firefox", "googlechrome")
 
@@ -11,13 +10,11 @@ $visualstudio = ("visualstudio2022professional" )
 
 $git = ("git", "github-desktop")
 
-$runtime = ("nodejs","dotnet4.7.1", "dotnetcore", "dotnet-6.0-sdk")
+$runtime = ("nodejs", "dotnet4.7.1", "dotnetcore", "dotnet-6.0-sdk")
 $db = ("sql-server-2019", "sql-server-management-studio")
 $misc = ("notepadplusplus", "postman", "fiddler", "winmerge", "microsoftazurestorageexplorer", "spotify", "powershell")
 
 # the order of this is important
-# we're attempting to make it such that devs can get other things done
-# while less time sensitive applications are installing later down the road
 $all = $communication + $runtime + $browsers + $vscode +  $visualstudio + $git + $db + $misc 
 
 choco config set cacheLocation "C:\Temp"
@@ -35,5 +32,5 @@ foreach ($package in $all) {
     }
 
 
-    Write-Output "Deleting temp chocolatey files"
-    Remove-Item "C:\Temp" -Recurse -Force
+Write-Output "Deleting temp chocolatey files"
+Remove-Item "C:\Temp" -Recurse -Force
