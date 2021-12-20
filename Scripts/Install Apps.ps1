@@ -11,7 +11,7 @@ $visualstudio = ("visualstudio2022professional" )
 $git = ("git", "github-desktop", "winmerge")
 $runtime = ("nodejs", "dotnetfx", "dotnetcore", "dotnet-6.0-sdk")
 $db = ("sql-server-2019", "sql-server-management-studio")
-$misc = ("notepadplusplus", "postman", "fiddler", "microsoftazurestorageexplorer", "spotify", "powershell")
+$misc = ("notepadplusplus", "postman", "fiddler", "microsoftazurestorageexplorer", "spotify", "powershell", "autohotkey")
 
 # the order of this is important
 $all = $communication + $runtime + $browsers + $vscode +  $visualstudio + $git + $db + $misc 
