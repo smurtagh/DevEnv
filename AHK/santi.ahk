@@ -7,7 +7,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 !n::Send !{Asc 164}
 !+n::Send !{Asc 165}
 
-; vowels
+; accented vowels
 !a::Send !{Asc 160}
 !e::Send !{Asc 130}
 !i::Send !{Asc 161}
