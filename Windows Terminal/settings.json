@@ -283,5 +283,6 @@
         }
     ],
     "theme": "dark",
-    "useAcrylicInTabRow": true
+    "useAcrylicInTabRow": true,
+    "confirmCloseAllTabs": false
 }
