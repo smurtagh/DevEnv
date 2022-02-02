@@ -11,23 +11,18 @@ $visualstudio = ("visualstudio2022professional" )
 $git = ("git", "github-desktop", "winmerge")
 $runtime = ("nodejs", "dotnetfx", "dotnetcore", "dotnet-6.0-sdk")
 $db = ("sql-server-2019", "sql-server-management-studio")
-$misc = ("notepadplusplus", "postman", "fiddler", "microsoftazurestorageexplorer", "spotify", "powershell", "autohotkey", "screentogif")
+$misc = ("microsoft-windows-terminal", "notepadplusplus", "postman", "fiddler", "microsoftazurestorageexplorer", "spotify", "pwsh", "autohotkey", "screentogif", "bitwarden")
+$fonts = ("firacode-ttf")
 
 # the order of this is important
-$all = $communication + $runtime + $browsers + $vscode +  $visualstudio + $git + $db + $misc 
+$all = $communication + $runtime + $browsers + $vscode +  $visualstudio + $git + $db + $misc + $fonts
 
 choco config set cacheLocation "C:\Temp"
 
 Write-Output "Packages ready to install" 
 foreach ($package in $all) {
     Write-Output "Downloading and installing $package"
-
-    if ($package -eq "wsl2") {
-            $params = "/Version:2"
-            choco install $package --params $params -y
-        }
-        
-        choco install $package -y
+    choco install $package -y
     }
 
 
