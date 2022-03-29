@@ -11,7 +11,7 @@ $visualstudio = ("visualstudio2022professional" )
 $git = ("git", "github-desktop", "winmerge")
 $runtime = ("nodejs", "dotnetfx", "dotnetcore", "dotnet-6.0-sdk")
 $db = ("sql-server-2019", "sql-server-management-studio")
-$misc = ("microsoft-windows-terminal", "notepadplusplus", "postman", "fiddler", "microsoftazurestorageexplorer", "spotify", "powershell-core", "autohotkey", "screentogif", "bitwarden", "powertoys")
+$misc = ("microsoft-windows-terminal", "notepadplusplus", "postman", "fiddler", "microsoftazurestorageexplorer", "spotify", "powershell-core", "autohotkey", "screentogif", "bitwarden", "powertoys", "azure-cli")
 $fonts = ("firacode-ttf")
 
 # the order of this is important
