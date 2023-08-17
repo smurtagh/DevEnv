@@ -57,7 +57,7 @@
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
-                "opacity": 30,
+                "opacity": 85,
                 "source": "Windows.Terminal.PowershellCore",
                 "useAcrylic": true
             },
@@ -66,7 +66,7 @@
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt",
-                "opacity": 30,
+                "opacity": 85,
                 "useAcrylic": true
             },
             {
@@ -74,10 +74,10 @@
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
                 "name": "Azure Cloud Shell",
-                "opacity": 30,
+                "opacity": 85,
                 "source": "Windows.Terminal.Azure",
                 "useAcrylic": true
-            }            
+            }
         ]
     },
     "schemes": 
