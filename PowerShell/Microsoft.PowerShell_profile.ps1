@@ -4,4 +4,4 @@ Set-Location C:\Users\santiago.murtagh\workspaces
 Import-Module -Name Terminal-Icons
 
 # Oh My Posh
-oh-my-posh init pwsh | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/santi.omp.json" | Invoke-Expression
