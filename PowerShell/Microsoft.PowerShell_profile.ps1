@@ -1,14 +1,7 @@
-Set-Location c:\workspaces
-
-# Chocolatey profile
-$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-if (Test-Path($ChocolateyProfile)) {
-  Import-Module "$ChocolateyProfile"
-}
+Set-Location C:\Users\santiago.murtagh\workspaces
 
 # Terminal Icons
 Import-Module -Name Terminal-Icons
 
-#Oh my posh
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme santi
+# Oh My Posh
+oh-my-posh init pwsh | Invoke-Expression
